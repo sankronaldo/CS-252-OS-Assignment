@@ -33,6 +33,39 @@ trace through the Windows version of this program using a debugger.
 
 [Question 2: Chapter 4- 4.24](https://github.com/sankronaldo/CS-252-OS-Assignment/tree/main/Q2-4.24)
 
+An interesting way of calculating π is to use a technique known as Monte
+Carlo, which involves randomization. This technique works as follows:
+Suppose you have a circle inscribed within a square, as shown in
+Figure 4.25. (Assume that the radius of this circle is 1.)
+
+• First, generate a series of random points as simple (x, y) coordinates.
+These points must fall within the Cartesian coordinates that bound
+the square. Of the total number of random points that are generated,
+some will occur within the circle.
+
+• Next, estimate π by performing the following calculation:
+
+*π = 4× (number of points in circle) / (total number of points)*
+
+Write a multithreaded version of this algorithm that creates a separate
+thread to generate a number of random points. The thread will count
+the number of points that occur within the circle and store that result
+in a global variable. When this thread has exited, the parent thread will
+calculate and output the estimated value of π. 
+
+It is worth experimenting with the number of random points generated. As a general rule, the
+greater the number of points, the closer the approximation to π.
+
+In the source-code download for this text, you will find a sample
+program that provides a technique for generating random numbers, as
+well as determining if the random (x, y) point occurs within the circle.
+
+Readers interested in the details of the Monte Carlo method for
+estimating π should consult the bibliography at the end of this chapter.
+In Chapter 6, we modify this exercise using relevant material from that
+chapter.
+
+
 ## Author(s)
 
 - [@sankarsh_r](https://www.linkedin.com/in/sankarsh-r-8441081a0/)
