@@ -45,7 +45,7 @@ some will occur within the circle.
 
 • Next, estimate π by performing the following calculation:
 
-***π = 4× (number of points in circle) / (total number of points)***
+*π = 4× (number of points in circle) / (total number of points)*
 
 Write a multithreaded version of this algorithm that creates a separate
 thread to generate a number of random points. The thread will count
