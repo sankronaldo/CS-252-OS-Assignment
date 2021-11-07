@@ -7,7 +7,7 @@ System Concepts by Abraham Silberschatz, Peter Baer Galvin and Greg Gagne.
 
 
 ## Questions
-[Question 1: Chapter 2- 2.24](https://github.com/sankronaldo/CS-252-OS-Assignment/tree/main/Q1-2.24)
+**[Question 1: Chapter 2- 2.24](https://github.com/sankronaldo/CS-252-OS-Assignment/tree/main/Q1-2.24)**
 
 In Section 2.3, we described a program that copies the contents of one file
 to a destination file. This program works by first prompting the user for
@@ -22,16 +22,16 @@ front end to dtrace, requires admin privileges, so it must be run using
 sudo.) These tools can be used as follows (assume that the name of the
 executable file is FileCopy:
 
-Linux:
+**Linux:
 strace ./FileCopy
 
-macOS:
+**macOS:
 sudo dtruss ./FileCopy
 
 Since Windows systems do not provide such a tool, you will have to
 trace through the Windows version of this program using a debugger.
 
-[Question 2: Chapter 4- 4.24](https://github.com/sankronaldo/CS-252-OS-Assignment/tree/main/Q2-4.24)
+**[Question 2: Chapter 4- 4.24](https://github.com/sankronaldo/CS-252-OS-Assignment/tree/main/Q2-4.24)
 
 An interesting way of calculating π is to use a technique known as Monte
 Carlo, which involves randomization. This technique works as follows:
@@ -45,7 +45,7 @@ some will occur within the circle.
 
 • Next, estimate π by performing the following calculation:
 
-*π = 4× (number of points in circle) / (total number of points)*
+***π = 4× (number of points in circle) / (total number of points)*
 
 Write a multithreaded version of this algorithm that creates a separate
 thread to generate a number of random points. The thread will count
