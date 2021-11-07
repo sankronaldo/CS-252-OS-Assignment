@@ -23,15 +23,15 @@ sudo.) These tools can be used as follows (assume that the name of the
 executable file is FileCopy:
 
 **Linux:
-strace ./FileCopy
+strace ./FileCopy**
 
 **macOS:
-sudo dtruss ./FileCopy
+sudo dtruss ./FileCopy**
 
 Since Windows systems do not provide such a tool, you will have to
 trace through the Windows version of this program using a debugger.
 
-**[Question 2: Chapter 4- 4.24](https://github.com/sankronaldo/CS-252-OS-Assignment/tree/main/Q2-4.24)
+**[Question 2: Chapter 4- 4.24](https://github.com/sankronaldo/CS-252-OS-Assignment/tree/main/Q2-4.24)**
 
 An interesting way of calculating π is to use a technique known as Monte
 Carlo, which involves randomization. This technique works as follows:
@@ -45,7 +45,7 @@ some will occur within the circle.
 
 • Next, estimate π by performing the following calculation:
 
-***π = 4× (number of points in circle) / (total number of points)*
+***π = 4× (number of points in circle) / (total number of points)***
 
 Write a multithreaded version of this algorithm that creates a separate
 thread to generate a number of random points. The thread will count
