@@ -21,10 +21,11 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
  - The program will prompt to enter the name of the input file and output file
  -  If it has been executed successfully, a "Success" message will be displayed
 
--Before running the program 
+## Screenshots
+- Before running the program 
 ![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/1.png)
 
--Running the program
+- Running the program
 ![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/2.png)
 
 ---
