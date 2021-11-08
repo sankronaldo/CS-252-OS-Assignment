@@ -37,6 +37,11 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 - The program will prompt the user to provide the name of the input file and output file
 - If it has been executed successfully, a "Success" message will be displayed
 
+## Screenshots
+- Running the strace command to trace the system calls
+
+![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/3.png)
+
 ---
 
 ## Reference(s)
