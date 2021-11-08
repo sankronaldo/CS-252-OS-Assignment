@@ -1,0 +1,6 @@
+This is a sample file.
+
+The contents of this file are to be copied to another file using a computer program and the system calls which happen during the process are to be traced.
+
+This is the first question of the assignment. (Q 2.24).
+
