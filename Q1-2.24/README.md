@@ -19,11 +19,13 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
  - `gcc answer.c -o answer.o`
  - `./answer.o`
  - The program will prompt to enter the name of the input file and output file
+ -  If it has been executed successfully, a "Success" message will be displayed
 
+![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/1.png)
 ---
 
 ### Command to create a log file in which the system calls are logged
-- `strace -ostrace_log ./copy.o`
+- `strace -ostrace_log ./answer.o`
 - The program will prompt the user to provide the name of the input file and output file
 - If it has been executed successfully, a "Success" message will be displayed
 
