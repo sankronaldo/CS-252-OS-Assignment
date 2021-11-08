@@ -23,9 +23,11 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 
 ## Screenshots
 - Before running the program 
+
 ![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/1.png)
 
-- Running the program
+- After running the program
+
 ![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/2.png)
 
 ---
