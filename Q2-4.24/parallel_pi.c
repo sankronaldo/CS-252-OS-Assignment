@@ -23,7 +23,7 @@ int totalPts = 0;
 
 
 //Random number generator with linear congruential generator
-double randUint (long i)
+double RandUint (long i)
 {
 
   seed = seed * 1103515245 + 123456;
@@ -33,13 +33,13 @@ double randUint (long i)
 
 
 //function to find the number of random points inside the unit circle
-void * count (void *X)
+void * Count (void *X)
 {
   /* initialize random numbers */
   for (int i = 0; i < N; i++)
     {
-      double x = (double)randUint (i);
-      double y = (double)randUint (i);
+      double x = (double)RandUint (i);
+      double y = (double)RandUint (i);
 
 
       // checking if it is a unit circle
@@ -52,7 +52,7 @@ void * count (void *X)
 }
 
 //function to estimate pi using pthreads
-void estimate_parallel ()
+void EstimateParallel ()
 {
 
   srand (SEED);
@@ -61,15 +61,15 @@ void estimate_parallel ()
   pthread_t thread;
 
   // creating a pthread which computes the number of points inside the unit circle
-  pthread_create (&thread, NULL, &count, NULL);
+  pthread_create (&thread, NULL, &Count, NULL);
 
   //waiting for the termination of the pthread
   pthread_join (thread, NULL);
 
   // estimating the value of pi using the formula given in the question
-  double est_pi_value = (4.0 * totalPts) / N;
+  double estPiValue = (4.0 * totalPts) / N;
 
-  printf ("No of trials: %d \nNo of points inside unit circle: %d \nEst value of pi:%lf\n",N,totalPts,est_pi_value);
+  printf ("No of trials: %d \nNo of points inside unit circle: %d \nEst value of pi:%lf\n",N,totalPts,estPiValue);
 
 }
 
@@ -82,10 +82,10 @@ int main ()
   // calculating the time taken by the function estimate()
   clock_t t;
   t = clock ();
-  estimate_parallel ();
+  EstimateParallel ();
   t = clock () - t;
-  double time_taken = ((double)t) / CLOCKS_PER_SEC;     // in seconds
-  printf ("estimate_parallel() took %f seconds to execute \n", time_taken);
+  double timeTaken = ((double)t) / CLOCKS_PER_SEC;     // in seconds
+  printf ("EstimateParallel() took %f seconds to execute \n", timeTaken);
 
   return 0;
 }
