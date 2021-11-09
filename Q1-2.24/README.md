@@ -44,6 +44,15 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 
 ---
 
+## Implementation
+
+- A program was written in C language for copying the contents from an existing file and paste the contents into a new file (which does not exist before executing the program).
+- The input file was sample.txt from which the contents were copied.
+- The output file was output.txt to which the copied content was pasted.
+- A strace_log file was also created in which all the system calls were logged.
+
+
+
 ## Reference(s)
 - https://github.com/mattlevan/copy.c
 - The code for the assignment has been taken from the above repository
