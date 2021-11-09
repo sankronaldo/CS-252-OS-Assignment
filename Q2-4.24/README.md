@@ -64,4 +64,5 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 - https://github.com/SeanStaz/monteCarloMethod.c/blob/master/A3.c
 - https://betterprogramming.pub/calculating-pi-%CF%80-with-monte-carlo-using-parallel-computing-with-openmp-and-c-2b3a357f0f78
 - https://github.com/ilias1111/parallel-monte-carlo-pi
+- https://www.geeksforgeeks.org/how-to-measure-time-taken-by-a-program-in-c/
 - The code for the assignment has been taken from the above mentioned sources
