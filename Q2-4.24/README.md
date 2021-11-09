@@ -35,7 +35,7 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
  - The issue with using rand() is that it is not thread-safe
  - [More information about thread safety](https://en.wikipedia.org/wiki/Thread_safety)
  - Therefore, in the parallel_pi.c program, random numbers are generated using  linear congruential generator algorithm instead of rand().
- - [More information on linear congruential generator](https://betterprogramming.pub/calculating-pi-%CF%80-with-monte-carlo-using-parallel-computing-with-openmp-and-c-2b3a357f0f78)
+ - [More information on linear congruential generator](https://en.wikipedia.org/wiki/Linear_congruential_generator)
  
   **Output**
 
