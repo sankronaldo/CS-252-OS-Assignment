@@ -46,3 +46,4 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 
 ## Reference(s)
 - https://github.com/mattlevan/copy.c
+- The code for the assignment has been taken from the above repository
