@@ -7,11 +7,11 @@
 
 //function to check if the given file exists or not
 
-bool file_exists(char *file_name) {
+bool FileExists(char *fileName) {
 
-    FILE *file_ptr = fopen(file_name, "r");
+    FILE *filePtr = fopen(fileName, "r");
 
-    if (!file_ptr) {
+    if (!filePtr) {
         return false;
     }
 
@@ -19,60 +19,60 @@ bool file_exists(char *file_name) {
 }
 
 
-//function to copy content for input file to output file
+//function to Copy content for input file to output file
 
-void copy(char *out, char *in) {
+void Copy(char *out, char *in) {
 
     // int c to store one char at a time
     int c;
     
     // input file is opened in read mode "r"
-    FILE *in_ptr = fopen(in, "r");
+    FILE *inPtr = fopen(in, "r");
     
     // output file is opened in write mode "w"
-    FILE *out_ptr = fopen(out, "w");
+    FILE *outPtr = fopen(out, "w");
     
-   // check if in_ptr is null
-    if (!in_ptr) {
+   // check if inPtr is null
+    if (!inPtr) {
         perror("Source file can't be opened: ");
         exit(1);
     }
 
-    //check if out_ptr is null
-    if (!out_ptr) {
+    //check if outPtr is null
+    if (!outPtr) {
         perror("Destination file can't be opened: ");
         exit(1);
     }
     
-    // copy file one char at a time and terminate loop when c reaches end of file (EOF)
-    while ((c = fgetc(in_ptr)) != EOF) {
-        fputc(c, out_ptr);
+    // Copy file one char at a time and terminate loop when c reaches end of file (EOF)
+    while ((c = fgetc(inPtr)) != EOF) {
+        fputc(c, outPtr);
     }
 
     // if all the above lines get executed, then the program has run successfully
     printf("\nSuccess!\n");
 
     // close files
-    fclose(in_ptr);
-    fclose(out_ptr);
+    fclose(inPtr);
+    fclose(outPtr);
 }
 
 
 // function to prompt the user to give the name of the input file and output file
 
-void prompt_user() {  
-    char str[32], in_str[32], out_str[32]; 
-    char *str_ptr = str;
-    char *in_ptr = in_str;
-    char *out_ptr = out_str;
+void PromptUser() {  
+    char str[32], inStr[32], outStr[32]; 
+    char *strPtr = str;
+    char *inPtr = inStr;
+    char *outPtr = outStr;
 
     // get name of source file and check whether it exists
-    while (strcmp(in_str, "")) { 
+    while (strcmp(inStr, "")) { 
         printf("Enter name of source file: ");
-        scanf("%s", str_ptr);
+        scanf("%s", strPtr);
         
-        if (file_exists(str_ptr)) {
-            strcpy(in_str, str);
+        if (FileExists(strPtr)) {
+            strcpy(inStr, str);
             break;
         }
         else {
@@ -82,12 +82,12 @@ void prompt_user() {
     }
 
     // get name of destination file and check if it already exists
-    while (strcmp(out_str, "")) {
+    while (strcmp(outStr, "")) {
         printf("Enter name of destination file: ");
-        scanf("%s", str_ptr);
+        scanf("%s", strPtr);
         
-        if (!file_exists(str_ptr)) {
-            strcpy(out_str, str);
+        if (!FileExists(strPtr)) {
+            strcpy(outStr, str);
             break;
         }
         else {
@@ -96,13 +96,13 @@ void prompt_user() {
         }
     }
     
-    //Calling the copy function to copy contents from in_str to out_str
+    //Calling the Copy function to Copy contents from inStr to outStr
 
-    copy(out_str, in_str);
+    Copy(outStr, inStr);
 }
 
 int main() {
-    prompt_user();
+    PromptUser();
     
     return EXIT_SUCCESS; 
 }
