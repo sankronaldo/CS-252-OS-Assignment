@@ -12,10 +12,10 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 
 
 
-## Steps to run programs
+## Steps to run the programs
 
 ### serial_pi.c
- - Open the terminal and navigate to the directory where the file **answer.c** is present
+ - Open the terminal and navigate to the directory where the file **serial_pi.c** is present
  - `gcc serial_pi.c -o serial_pi.o`
  - `./serial_pi.o`
  
@@ -26,7 +26,7 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 ---
 
 ### parallel_pi.c
- - Open the terminal and navigate to the directory where the file **answer.c** is present
+ - Open the terminal and navigate to the directory where the file **parallel_pi.c** is present
  - `gcc -pthread parallel_pi.c -o parallel_pi.o`
  - `./parallel_pi.o`
  
