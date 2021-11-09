@@ -61,7 +61,7 @@ void copy(char *out, char *in) {
 // function to prompt the user to give the name of the input file and output file
 
 void prompt_user() {  
-    char str[32], in_str[32], out_str[32]; // 32 char width is fine 
+    char str[32], in_str[32], out_str[32]; 
     char *str_ptr = str;
     char *in_ptr = in_str;
     char *out_ptr = out_str;
