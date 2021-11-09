@@ -21,7 +21,7 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
  
   **Output**
 
- ![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q2-4.24/1.png)
+ ![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q2-4.24/images/1.png)
 
 ---
 
@@ -39,7 +39,7 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
  
   **Output**
 
- ![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q2-4.24/2.png)
+ ![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q2-4.24/images/2.png)
 
 ---
 
