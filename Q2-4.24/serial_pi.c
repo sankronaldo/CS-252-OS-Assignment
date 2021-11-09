@@ -18,10 +18,10 @@
 #define N 800000000
 
 // function to estimate pi using for loop
-void estimate_serial ()
+void EstimateSerial ()
 {
   int count = 0;
-  double est_pi_value;
+  double estPiValue;
 
   srand (SEED);
 
@@ -49,9 +49,9 @@ void estimate_serial ()
     }
 
   // estimating value of pi according to the formula given in the question
-  est_pi_value = (4.0 * count) / N;
+  estPiValue = (4.0 * count) / N;
 
-  printf ("No of trials: %d \nNo of points inside unit circle: %d \nEst value of pi:%lf\n",N,count,est_pi_value);
+  printf ("No of trials: %d \nNo of points inside unit circle: %d \nEst value of pi:%lf\n",N,count,estPiValue);
 
 }
 
@@ -64,10 +64,10 @@ int main ()
   // calculating the time taken by the function estimate()
   clock_t t;
   t = clock ();
-  estimate_serial ();
+  EstimateSerial ();
   t = clock () - t;
-  double time_taken = ((double)t) / CLOCKS_PER_SEC;     // in seconds
-  printf ("estimate_serial() took %f seconds to execute \n", time_taken);
+  double timeTaken = ((double)t) / CLOCKS_PER_SEC;     // in seconds
+  printf ("EstimateSerial() took %f seconds to execute \n", timeTaken);
 
   return 0;
 
