@@ -115,3 +115,9 @@ lseek() repositions the file offset of the open file description associated with
 `noreturn void syscall(SYS_exit_group, int status);`
 
 exit all threads in a process
+
+---
+
+## Reference(s):
+ - https://man7.org/linux/man-pages/dir_all_by_section.html
+ - The explanation has been written from the Linux Manual Pages
