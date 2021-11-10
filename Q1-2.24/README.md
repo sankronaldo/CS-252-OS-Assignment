@@ -40,9 +40,10 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 ## Screenshots
 - Running the strace command to trace the system calls
 
+[View the strace_log file](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/system%20calls/strace_log)
+
 ![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/images/3.png)
 
-[View the strace_log file](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/system%20calls/strace_log)
 
 ---
 
