@@ -57,7 +57,7 @@ void EstimateParallel ()
 
   srand (SEED);
 
-  // defining the thread variable as pthread_t datatype
+  // defining the thread variable as pthread_t datatype (4 bytes integer)
   pthread_t thread;
 
   // creating a pthread which computes the number of points inside the unit circle
