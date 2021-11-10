@@ -42,6 +42,8 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 
 ![App Screenshot](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/images/3.png)
 
+[View the strace_log file](https://github.com/sankronaldo/CS-252-OS-Assignment/blob/main/Q1-2.24/system%20calls/strace_log)
+
 ---
 
 ## Implementation
