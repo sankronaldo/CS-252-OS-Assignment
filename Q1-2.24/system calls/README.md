@@ -70,7 +70,7 @@ read() attempts to read up to count bytes from file descriptor fd into the buffe
 - Line 11
 `ssize_t pread(int fd, void *buf, size_t count, off_t offset);`
 
-pread() reads up to count bytes from file descriptor fd at offset offset (from the start of the file) into the buffer starting at buf.  The file offset is not changed.
+pread() reads up to count bytes from file descriptor fd at offset (from the start of the file) into the buffer starting at buf.  The file offset is not changed.
 
    ---
 
