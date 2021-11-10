@@ -56,5 +56,5 @@ You will require the GNU Compiler Collection (GCC) in order to be able to run th
 ## Reference(s)
 - https://github.com/mattlevan/copy.c
 - The code for the assignment has been taken from the above repository
-- https://man7.org/linux/man-pages/man2/execve.2.html
-- The above link was used to learn about the different system calls logged in the **strace_log** file
+- https://man7.org/linux/man-pages/dir_all_by_section.html
+- The above link was used to refer to the different system calls logged in the **strace_log** file
